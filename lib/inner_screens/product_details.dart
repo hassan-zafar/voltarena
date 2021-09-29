@@ -7,6 +7,7 @@ import 'package:volt_arena/provider/cart_provider.dart';
 import 'package:volt_arena/provider/dark_theme_provider.dart';
 import 'package:volt_arena/provider/favs_provider.dart';
 import 'package:volt_arena/provider/products.dart';
+import 'package:volt_arena/screens/calender.dart';
 import 'package:volt_arena/services/stripeDemo.dart';
 import 'package:volt_arena/widget/feeds_products.dart';
 import 'package:volt_arena/wishlist/wishlist.dart';
@@ -300,7 +301,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                           color: ColorsConsts.cartColor,
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(MyBookingsScreen.routeName);
+                          Navigator.of(context)
+                              .pushNamed(MyBookingsScreen.routeName);
                         },
                       ),
                     ),
@@ -346,8 +348,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                       shape: RoundedRectangleBorder(side: BorderSide.none),
                       color: Theme.of(context).backgroundColor,
                       onPressed: () {
-                        // Navigator.of(context)
-                        //     .pushNamed(WebhookPaymentScreen.routeName);
+                        Navigator.of(context)
+                            .pushNamed(CalenderScreen.routeName)
+                            .then((value) => Navigator.pop(context));
                       },
                       child: Row(
                         children: [

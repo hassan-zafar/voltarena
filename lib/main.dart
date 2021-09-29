@@ -16,6 +16,7 @@ import 'package:volt_arena/provider/orders_provider.dart';
 import 'package:volt_arena/provider/products.dart';
 import 'package:volt_arena/screens/auth/login.dart';
 import 'package:volt_arena/screens/auth/sign_up.dart';
+import 'package:volt_arena/screens/calender.dart';
 import 'package:volt_arena/upload_product_form.dart';
 import 'package:volt_arena/user_state.dart';
 import 'package:volt_arena/wishlist/wishlist.dart';
@@ -129,6 +130,7 @@ class _MyAppState extends State<MyApp> {
                     // WebhookPaymentScreen.routeName: (ctx) =>
                     //     WebhookPaymentScreen(),
                     MyBookingsScreen.routeName: (ctx) => MyBookingsScreen(),
+                    CalenderScreen.routeName: (ctx) => CalenderScreen(),
 
                     Feeds.routeName: (ctx) => Feeds(),
                     WishlistScreen.routeName: (ctx) => WishlistScreen(),

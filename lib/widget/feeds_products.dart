@@ -42,10 +42,10 @@ class _FeedProductsState extends State<FeedProducts> {
                           width: double.infinity,
                           height:
                               // 200,
-                              MediaQuery.of(context).size.height * 0.3,
+                              MediaQuery.of(context).size.height * 0.28,
                           child: Image.network(
                             productsAttributes.imageUrl!,
-                            fit: BoxFit.fitWidth,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
