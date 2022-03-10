@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:volt_arena/landing_page.dart';
 import 'package:volt_arena/main_screen.dart';
 import 'package:volt_arena/screens/introduction_auth_screen.dart';
-
-import 'screens/landingPage.dart';
-
 class UserState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
