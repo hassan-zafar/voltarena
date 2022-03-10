@@ -22,7 +22,7 @@ jobs:
         with:
           flutter-version: '2.10.2'
       - run: flutter pub get
-      - run: flutter test
+      # - run: flutter test
       - run: flutter build apk --debug --split-per-abi
       - run: |
           flutter build ios --no-codesign
